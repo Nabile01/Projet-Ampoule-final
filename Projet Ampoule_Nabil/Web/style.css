@@ -1,0 +1,358 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+@font-face {
+	font-family: 'Geomanist';
+	src: url('fonts/Geomanist-Regular.eot');
+	src: local('☺'), url('fonts/Geomanist-Regular.woff') format('woff'), url('fonts/Geomanist-Regular.ttf') format('truetype'), url('fonts/Geomanist-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+body.form {
+    background-image: url(img/pexels-johannes-plenio-1103970.jpg);
+    background-size: cover;
+}
+
+/* MENU */
+body.form > header> nav {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 60px;
+    background-color: rgba(255, 255, 255, 0.205);
+    height: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 3px 8px 5px rgba(109, 109, 109, 0.253);
+}
+
+body.form > header > nav > li > a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+body.form > header > nav > li {
+    background-color: rgba(255, 255, 255, 0.432);
+    margin: 15px;
+    padding: 10px;
+    border-radius: 65px;
+    box-shadow: 3px 3px 5px rgba(109, 109, 109, 0.623);
+}
+
+body.form > header > nav > li:hover {
+    background: linear-gradient(45deg,rgba(172, 187, 182, 0.527) 35%, rgba(87, 114, 128, 0.356) 100%);
+    transition: ease-out 0.2s;
+}
+
+body.form > header > nav > li > a:hover {
+    color: white;
+}
+
+/* FORMULAIRE */
+body.form > main > form > fieldset > legend {
+    text-transform: uppercase;
+    font-family: 'Geomanist';
+    font-size: 1.5rem;
+}
+
+body.form > main > form {
+    display: flex;
+    justify-content: center;   
+}
+
+body.form > main > form > fieldset {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 200px;  
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.205);
+    box-shadow: 2px 5px 8px 5px rgba(109, 109, 109, 0.253);
+}
+
+body.form > main > form > fieldset > div {
+    margin-bottom: 10px;
+}
+/* SELECTION */
+body.form > main > form > fieldset > div:nth-child(1n) > select {
+    width: 312px;
+    background-color: rgba(255, 255, 255, 0.205);
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Geomanist';
+}
+
+/* DATE ET PRIX */
+body.form > main > form > fieldset > div:nth-child(1n)> input {
+    background-color:  rgba(255, 255, 255, 0.205);
+    padding: 3px;
+    border: solid 1px gray;
+    border-bottom: 2px solid rgba(90, 89, 89, 0.61);
+    height: 20px;
+    width: 147px;
+    border-radius: 5px;
+    font-family: 'Geomanist';
+}
+
+/* BOUTTON VALIDER */
+body.form > main > form > fieldset >  input[type=submit] {
+    padding:5px;
+    width: 316px;
+    background-color:  rgba(66, 78, 105, 0.205);
+    border: solid 2px rgba(72, 105, 121, 0.719);
+    border-radius: 7px;
+    font-family: 'Geomanist';
+    font-size: 1.1rem;
+}
+
+body.form > main > form > fieldset >  input[type=submit]:hover {
+    box-shadow: inset 317px 0 0 0 rgba(72, 105, 121, 0.719);
+    color: rgb(243, 233, 215);
+    transition: ease-out 0.4s;
+}
+
+
+    /* HISTORIQUE */
+
+/* MENU */
+body.histo > header> nav {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(72, 105, 121, 0.541);
+    height: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 3px 8px 5px rgba(109, 109, 109, 0.253);
+}
+
+body.histo > header > nav > li > a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+ 
+body.histo > header > nav > li {
+    background-color: rgba(255, 255, 255, 0.432);
+    margin: 15px;
+    padding: 10px;
+    border-radius: 65px;
+    box-shadow: 3px 3px 5px rgba(109, 109, 109, 0.623);
+}
+
+body.histo > header > nav > li:hover {
+    background: linear-gradient(45deg,rgba(172, 187, 182, 0.527) 35%, rgba(87, 114, 128, 0.356) 100%);
+    transition: ease-out 0.2s;
+}
+
+body.histo > header > nav > li > a:hover {
+    color: white;
+} 
+/* FIN MENU */
+
+body.histo > main > h1{  
+    text-align: center;
+    font-family: 'Geomanist', Arial, Helvetica, sans-serif;
+    font-size: 2.8rem;
+    margin-bottom: 5px;
+    color: rgb(21, 70, 96)  
+}
+
+
+/* TABLEAU HISTORIQUE */
+
+body.histo > main > div {
+    display: flex;
+    justify-content: center;
+}
+
+body.histo > main > div > table {
+    font-family: 'Geomanist', Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border: solid rgb(172, 187, 182) 5px;
+    border-radius: 5px 5px 0 0;
+}
+
+body.histo > main > div > table > thead > tr > th {
+    color: white;
+    background-color: rgb(172, 187, 182);   
+    text-align: center; 
+}
+
+body.histo > main > div > table > tbody > tr > td {
+    text-align: center;
+    padding: 5px 15px;
+    color: rgb(21, 70, 96);
+    border-bottom: solid 1px black;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+
+/* BOUTTONS SUPPRIMER MODIFIER */
+body.histo > main > div > table > tbody > tr > td > button {
+    background-color:  rgba(134, 146, 175, 0.205);
+    border: solid 2px rgba(72, 105, 121, 0.719);
+    border-radius: 7px;
+    font-family: 'Geomanist', Arial, Helvetica, sans-serif;
+    width: 160px;
+    height: 28px;
+}
+
+body.histo > main > div > table > tbody > tr > td > button:hover {
+    box-shadow: inset 317px 0 0 0 rgb(71, 106, 124);
+    transition: ease-out 1s;
+}
+
+body.histo > main > div > table > tbody > tr > td > button > a {
+    text-decoration: none;
+    padding: 10px 45px 1px 45px;       
+    text-transform: uppercase;
+    color: 	rgb(21, 70, 96);
+}
+
+body.histo > main > div > table > tbody > tr > td > button > a:hover {
+    color: white;
+}
+
+/* FIN BOUTTONS SUPPRIMER MODIFIER */
+
+.pagination {
+    color: 	rgb(21, 70, 96);
+}
+
+/* FIN HISTORIQUE */
+
+
+
+/* PAGE DE CONNEXION */
+
+body.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url(img/pexels-johannes-plenio-1103970.jpg) no-repeat center fixed;
+}
+
+body.login > h1 {
+    font-family: 'Geomanist',Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+
+body.login > form > div > label {
+    display: block;
+    font-family: 'Geomanist', Arial, Helvetica, sans-serif;
+}
+
+body.login > form > div > input[type="submit"] {
+    display: block;
+    width: 173px;
+    margin-top: 10px;
+    font-family: 'Geomanist', Arial, Helvetica, sans-serif;
+    background-color:  rgba(66, 78, 105, 0.205);
+    border: solid 2px rgba(72, 105, 121, 0.719);
+    border-radius: 7px;
+    font-family: 'Geomanist';
+    font-size: 1rem;
+}
+
+body.login > form > div > input[type="submit"]:hover {
+    background-color: rgba(72, 105, 121, 0.719);
+    color: rgb(243, 233, 215);
+}
+
+
+
+@media only screen and (max-width: 925px) {
+    
+    body.form {
+        background: url(img/pexels-johannes-plenio-1103970.jpg) center no-repeat fixed;
+       
+    }
+
+    body.form > header > nav > li > a {
+        padding: 2px;
+    }
+
+    body.login > h1 {
+        font-family: 'Geomanist',Axrial, Helvetica, sans-serif;
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 530px){
+    body.form > header > nav > li {
+        width: 100px;
+        text-align:center;
+        font-size: 0.9rem;
+    }
+}
+
+
+
+@media only screen and (max-width :850px) {
+
+    body.histo > main > div > table {
+        width: 50%;
+    }
+    
+}
+
+@media only screen and (max-width :780px) {
+
+    body.histo > main > div > table > tbody > tr > td > button {
+        width: 100px;
+    }
+
+    body.histo > main > div > table > tbody > tr > td > button > a {
+        width: 80px;
+        padding: 0px;
+    }
+}
+
+@media only screen and (max-width :680px) {
+
+    body.histo > main > div > table > tbody > tr > td {
+        font-size: 0.9rem;
+    }
+
+    body.histo > main > div > table > tbody > tr > td > button {
+        width: 60px;
+    }
+
+    body.histo > main > div > table > tbody > tr > td > button > a {
+         padding: 0px;
+         font-size: 0.7rem;
+    }
+}
+
+@media only screen and (max-width :550px) {
+
+    body.histo > main > div > table > tbody > tr > td > button {
+        width: 37px;
+        overflow: hidden;
+    }
+
+    body.histo > main > div > table > tbody > tr > td > button > a {
+         padding: 0px;
+         font-size: 0.73rem;
+    }
+}
